@@ -19,6 +19,7 @@ for (i = 0; lessThan; i++){
 }
 
 int j = 0;
+int temp = 10;
 for (int i = 0; j < temp; i++){
 	j = i;
 	System.out.println("j = " + j);
