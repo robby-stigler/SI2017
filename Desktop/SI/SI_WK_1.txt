@@ -31,11 +31,11 @@ for (int i = 0; i < 20; i++)
 	System.out.println("The " + i + "th factor of " + mult + " is " + iFactor);
 
 for (int i = 0; i < 50; i++){
-	boolean isFactor = 50 % i = 0;
+	boolean isFactor = 50 % i == 0;
 	System.out.println(i + " is a factor of 50 evaluates to: " + isFactor);
 }
 
-int len = 50
+int len = 50;
 for (int i = 0; i < len; i++){
 	for (int j = 0; j < 5; j++){
 		i += j;
