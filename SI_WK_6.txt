@@ -1,0 +1,145 @@
+public static void whileMystery(int a, int b, int c) {
+	int x = 0;
+	while (a >= c || b > c) {
+		a /= 2;
+		b -= c;
+		x++;
+		System.out.print("(" + a + ", " + b + ") ");
+	}
+	System.out.println("x = " + x);
+}
+
+1) whileMystery(16, 5, 1);
+2) whileMystery(0, 1, 2);
+3) whileMystery(30, 10, 5);
+4) whileMystery(4, 15, 3);
+
+-------------------------------------------------------------------------------------------------------------------
+
+public static void mystery(int x, int y, int z) {
+	while (x >= y && x > z) {
+		x = x - z;
+		y--;
+		z++;
+	}
+	System.out.println(x + " " + y + " " + z);
+}
+
+1) mystery(31, 4, 15);
+2) mystery(8, 4, 2); 
+3) mystery(0, 0, 7); 
+4) mystery(9, 1, 1);
+
+-------------------------------------------------------------------------------------------------------------------
+
+public static void whileMystery(int n) {
+	int x = 0;
+	int y = 1;
+	while(n > x && n > y) {
+		n--;
+		x = x + 2;
+		y = y + x;
+	}
+	System.out.println(x);
+}
+
+1) whileMystery(5); 
+2) whileMystery(10); 
+3) whileMystery(4); 
+
+-------------------------------------------------------------------------------------------------------------------
+
+public static void whileMystery(int x, int y, int z) {
+	while (x < z || y < z) {
+		x = x + y;
+		y = y * 2;
+		System.out.print(x + " " + y + " ");
+	}
+	System.out.println();
+}
+
+1) whileMystery(0, 5, 10);
+2) whileMystery(4, 2, 12);
+3) whileMystery(10, 1, 14);
+
+-------------------------------------------------------------------------------------------------------------------
+
+public static void whileMystery(int x, int y) {
+	int s = 0;
+	while (x > 0 && 2 * y >= x) {
+		System.out.print(s + " ");
+		y = y - x;
+		x--;
+		s = s + x;
+	}
+	System.out.println(s);
+}
+
+1) whileMystery(-2, -6);
+2) whileMystery(2, 3);
+3) whileMystery(4, 8);
+4) whileMystery(5, 40);
+5) whileMystery(10, 31);
+
+-------------------------------------------------------------------------------------------------------------------
+
+public static void whileMystery(int a) {
+	int b = 1;
+	int c = 0;
+	while (b <= a) {
+		if (b % 2 == 0) {
+			c++;
+		}
+		b = b * 10;
+		c++;
+	}
+	System.out.println(c + 1);
+}
+
+1) whileMystery(2);
+2) whileMystery(84)
+3) whileMystery(4097)
+4) whileMystery(388) 
+5) whileMystery(23980)
+
+-------------------------------------------------------------------------------------------------------------------
+
+public static void mystery(int x) {
+	int a = 1;
+	int c = 0;
+	while (x > 0) {
+		a = x % 2;
+		if (a == 1) {
+			c++;
+		}
+		x = x / 2;
+	}
+	System.out.println(c);
+}
+
+1) mystery(2);
+2) mystery(-1);
+3) mystery(7);
+4) mystery(18);
+5) mystery(43);
+
+-------------------------------------------------------------------------------------------------------------------
+
+public static void mystery(int a, int b) {
+	while (b != 0) {
+		if (a > b) {
+			System.out.print(a + " ");
+			a = a - b;
+		} else {
+			System.out.print(b + " ");
+			b = b - a;
+		}
+	}
+	System.out.println(a);
+}
+
+1) mystery(42, 0);
+2) mystery(6, 12);
+3) mystery(18, 27);
+4) mystery(24, 60);
+5) mystery(50, 15);
